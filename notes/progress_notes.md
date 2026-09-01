@@ -13,7 +13,7 @@
 - Found the connection in Sysmon Event ID 3 and identified the process, PID, destination IP, and port.
 - Used the Windows hosts file to map the name kali-lab.local to 192.168.50.10.
 - Found the matching Sysmon Event ID 22 DNS query and saw kali-lab.local resolved to 192.168.50.10.
-- Was able to connect the process, DNS query, and network connection together using the same PID.
+- Was able to connect the DNS query and network connection with the related process using the timestamps and event information.
 
 ## August 17, 2026
 - Started the first controlled remote execution event using WinRM.
