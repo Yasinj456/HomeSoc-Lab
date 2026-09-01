@@ -21,7 +21,6 @@
 - Used Evil-WinRM on Kali to establish a remote PowerShell session to my Windows VM.
 - Ran whoami and hostname remotely from Kali.
 - Used Sysmon Event ID 1 to trace the remote execution and found the related processes and was able to connect them together through their PIDs and parent process info.
-- This helped me understand how remote execution can still leave a Windows-side process tree that can be investigated.
 
 ## August 21, 2026
 - Finished setting up the Debian 13 VM that will be used as the Wazuh server.
@@ -56,5 +55,4 @@
 - This allowed me to connect the remote WinRM session to the systeminfo.exe process. 
 - Also found Windows Security Event ID 4672 showing special privileges assigned to the Yasin logon.
 - Had trouble finding the specific systeminfo.exe Event ID 1 in Wazuh even though it was clearly present in Windows Sysmon.
-- This helped me understand that having telemetry on the endpoint does not always mean the same event will be easy to find in the SIEM.
 - Finished the main technical work for the home SOC lab and moved on to documenting the investigation.

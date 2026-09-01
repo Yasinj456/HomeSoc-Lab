@@ -14,6 +14,6 @@ Eventually I found that Windows was blocking inbound ICMP. The network itself wa
 
 After fixing that, I tested the machines again and confirmed that Kali, Windows, and Debian could communicate with each other with 0% packet loss.
 
-This was a good reminder for me not to immediately assume the virtual network is broken when something cannot ping. Checking the interface, routes, ARP/neighbor state, and testing each machine individually helped narrow the problem down to the Windows firewall.
+This was a good reminder for me not to immediately assume the virtual network is broken when something cannot ping. Checking the interface and routes of each machine machine individually helped narrow the problem down to the Windows firewall.
 
-The network is now being used as the isolated environment for the rest of the SOC lab, with Kali generating activity, Windows producing endpoint telemetry, and Debian running Wazuh to collect and investigate the logs.
+The network is now set up for the rest of the lab, with Kali generating activity, Windows producing endpoint logs, and Debiam running Wazuh. s
