@@ -1,6 +1,6 @@
 # Home SOC Lab
 
-A small home SOC lab I built to learn how endpoint activity can be collected, searched, and investigated using Windows, Sysmon, and Wazuh.
+A small home SOC lab I built to learn how endpoint activity can be collected, searched, and investigated using Kali, Windows, Sysmon, and Wazuh.
 
 ## Lab Setup
 
@@ -29,7 +29,7 @@ I worked through two main investigations:
 1. Windows to Kali network activity, using Sysmon Event IDs 3 and 22 to connect network and DNS activity.
 2. Kali to Windows remote access through WinRM, using Windows Security events and Sysmon to trace the remote session.
 
-The investigations and supporting evidence are documented in [investigation.md](notes/investigation.md).
+The investigations and supporting evidence are documented in [investigations.md](notes/investigation.md).
 
 ## Notes
 
